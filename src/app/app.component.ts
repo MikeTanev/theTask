@@ -65,6 +65,38 @@ export class AppComponent {
     'progLang': 'JavaScript',
     'stars': 59,
     'repoURL': 'https://github.com/bosch-io/iot-things-examples'
+    },
+    {
+    id: 108,
+    'repoName': 'business-partner-agent-chart',
+    'description': '',
+    'progLang': 'Smarty',
+    'stars': 0,
+    'repoURL': 'https://github.com/bosch-io/business-partner-agent-chart'
+    },
+    {
+    id: 109,
+    'repoName': 'kanto',
+    'description': '',
+    'progLang': 'HTML',
+    'stars': 0,
+    'repoURL': 'https://github.com/bosch-io/kanto'
+    },
+    {
+    id: 110,
+    'repoName': 'aries-vcx',
+    'description': 'Implementation of Aries protocols in Rust with wrappers for NodeJS, Java, Android and iOS.',
+    'progLang': 'Rust',
+    'stars': 0,
+    'repoURL': 'https://github.com/bosch-io/aries-vcx'
+    },
+    {
+    id: 111,
+    'repoName': 'aries-rfcs',
+    'description': 'Hyperledger Aries is infrastructure for blockchain-rooted, peer-to-peer interactions',
+    'progLang': 'Python',
+    'stars': 181,
+    'repoURL': 'https://github.com/bosch-io/aries-vcx'
     }
   ];
 
