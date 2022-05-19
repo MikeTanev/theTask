@@ -1,0 +1,37 @@
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 150px;
+}
+h2 {
+  font-family: Lato;
+  font-style: italic;
+  margin-left: 150px;
+}
+
+table {
+  margin-left: 150px;
+  margin-right: 150px;
+  border-bottom-color: grey;
+}
+
+.name {
+  text-align: left;
+}
+
+.descr {
+  text-align: left;
+}
+
+.rurl {
+  text-align: left;
+}
+
+th{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+td {
+  text-align: center;
+  margin-inline: 10px;
+  border-bottom-right-radius: 20%;
+}
