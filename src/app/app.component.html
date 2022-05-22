@@ -1,30 +1,30 @@
 <h1>Wellcome</h1>
 <h2>In this table you can find few Repos from Bosch.io gitHUB page</h2>
-
-<table mat-table [dataSource]="repos">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
 <!--Template for Name column-->
 <ng-container matColumnDef="repoName">
-<th id="name" mat-header-cell *matHeaderCellDef mat-sort-header>Repo Name</th>
-<td class="name" mat-cell *matCellDef='let repos'>{{repos.repoName}} </td>
+<th mat-header-cell *matHeaderCellDef mat-sort-header>Repo Name</th>
+<td class="name" mat-cell *matCellDef='let dataSource'>{{dataSource.repoName}} </td>
 </ng-container>
 <!--Template for Description column-->
 <ng-container matColumnDef="description">
-<th id="descr" mat-header-cell *matHeaderCellDef mat-sort-header>Description</th>
-<td class="descr"mat-cell *matCellDef='let repos'>{{repos.description}} </td>
+<th mat-header-cell *matHeaderCellDef mat-sort-header>Description</th>
+<td class="descr"mat-cell *matCellDef='let dataSource'>{{dataSource.description}} </td>
 </ng-container>
 <!--Template for Programming language column-->
 <ng-container matColumnDef="progLang">
-<th id="plang" mat-header-cell *matHeaderCellDef mat-sort-header>Programming Language</th>
-<td class="plang" mat-cell *matCellDef='let repos'>{{repos.progLang}} </td>
+<th mat-header-cell *matHeaderCellDef mat-sort-header>Programming Language</th>
+<td class="plang" mat-cell *matCellDef='let dataSource'>{{dataSource.progLang}} </td>
 </ng-container>
 <ng-container matColumnDef="stars">
-<th id="nstar" mat-header-cell *matHeaderCellDef mat-sort-header>Number of Stargazers</th>
-<td class="nstar" mat-cell *matCellDef='let repos'>{{repos.stars}} </td>
+<th mat-header-cell *matHeaderCellDef mat-sort-header>Number of Stargazers</th>
+<td class="nstar" mat-cell *matCellDef='let dataSource'>{{dataSource.stars}} </td>
 </ng-container>
 <ng-container matColumnDef="repoURL">
-<th id="rurl"mat-header-cell *matHeaderCellDef mat-sort-header>Repository URL</th>
-<td class="rurl" mat-cell *matCellDef='let repos'><a href={{repos.repoURL}} target="_blank">{{repos.repoURL}}</a></td>
+<th mat-header-cell *matHeaderCellDef mat-sort-header>dataSourceitory URL</th>
+<td class="rurl" mat-cell *matCellDef='let dataSource'><a href={{dataSource.repoURL}} target="_blank">{{dataSource.repoURL}}</a></td>
 </ng-container>
+<!--Rows template-->
 <tr mat-header-row *matHeaderRowDef='displayedColumns'></tr>
-<tr mat-row *matRowDef="let repos; columns: displayedColumns"></tr>
+<tr mat-row *matRowDef="let dataSource; columns: displayedColumns"></tr>
 </table>
