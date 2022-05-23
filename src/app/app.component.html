@@ -1,5 +1,19 @@
+<div class="info">
 <h1>Wellcome</h1>
 <h2>In this table you can find few Repos from Bosch.io gitHUB page</h2>
+</div>
+<div class="filter">
+<!--<mat-form-field appearance="standard">
+<mat-label>Filter</mat-label>
+<input matInput (keyup)="applyFilter($event)" placeholder="Search columns" #input>
+</mat-form-field>-->
+<mat-form-field>
+<label>Filter</label>
+<br>
+<input matInput (keyup)="applyFilter($event)">
+</mat-form-field>
+</div>
+<div>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
 <!--Template for Name column-->
 <ng-container matColumnDef="repoName">
@@ -21,10 +35,11 @@
 <td class="nstar" mat-cell *matCellDef='let dataSource'>{{dataSource.stars}} </td>
 </ng-container>
 <ng-container matColumnDef="repoURL">
-<th mat-header-cell *matHeaderCellDef mat-sort-header>dataSourceitory URL</th>
+<th mat-header-cell *matHeaderCellDef mat-sort-header>Repository URL</th>
 <td class="rurl" mat-cell *matCellDef='let dataSource'><a href={{dataSource.repoURL}} target="_blank">{{dataSource.repoURL}}</a></td>
 </ng-container>
 <!--Rows template-->
 <tr mat-header-row *matHeaderRowDef='displayedColumns'></tr>
 <tr mat-row *matRowDef="let dataSource; columns: displayedColumns"></tr>
 </table>
+</div>
